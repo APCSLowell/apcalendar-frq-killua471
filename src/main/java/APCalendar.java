@@ -60,13 +60,8 @@ public class APCalendar
     /* to be implemented in part (b) */
     int firstDay = firstDayOfYear(year);
     int nDay=dayOfYear(month,day,year);
-    for(int i=0; i<nDay;i++){
-      firstDay+=i;
-    }
-    if(firstDay<7){
-      return firstDay;
-    }
-    return firstDay%7;
+    int day=firstDay+nDay;
+    return (day-1)%7;
       
     }
   
