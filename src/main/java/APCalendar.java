@@ -63,7 +63,7 @@ public class APCalendar
     for(int i=0; i<nDay;i++){
       firstDay+=i;
     }
-    if(firstday<7){
+    if(firstDay<7){
       return firstDay;
     }
     return firstDay%7;
